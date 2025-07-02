@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  font-family: sans-serif;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+
+  .store-hero {
+    height: 150px;
+    background: url("/assets/bg.png") no-repeat center/cover;
+    mask-image: linear-gradient(to bottom, black 10%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 10%, transparent 100%);
+  }
+
+  .product-grid {
+    position: relative;
+    overflow: visible;
+    z-index: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 1rem;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+}
